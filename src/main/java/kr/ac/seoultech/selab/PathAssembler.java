@@ -14,48 +14,48 @@ public class PathAssembler {
     //일단 하드코딩으로... 경로 주기
     public PathAssembler() {
 
-        googleSheet.add("lang_npe_1");
-        googleSheet.add("lang_npe_2");
-        googleSheet.add("lang_npe_3");
-        googleSheet.add("lang_npe_4");
-        googleSheet.add("lang_npe_5");
-        googleSheet.add("lang_npe_6");
-        googleSheet.add("lang_npe_7");
-        googleSheet.add("lang_npe_8");
-        googleSheet.add("lang_npe_9");
-        googleSheet.add("lang_npe_10");
-        googleSheet.add("lang_npe_11");
-        googleSheet.add("lang_npe_12");
-        googleSheet.add("lang_npe_13");
-        googleSheet.add("lang_npe_14");
-        googleSheet.add("math_npe_1");
-        googleSheet.add("math_npe_2");
-        googleSheet.add("math_npe_3");
-        googleSheet.add("math_npe_4");
-        googleSheet.add("math_npe_5");
-        googleSheet.add("math_npe_6");
-        googleSheet.add("collections_npe_1");
-        googleSheet.add("collections_npe_2");
-        googleSheet.add("collections_npe_3");
-        googleSheet.add("commons-io_npe_1");
-        googleSheet.add("commons-io_npe_2");
-        googleSheet.add("commons-io_npe_3");
-        googleSheet.add("commons-io_npe_4");
-        googleSheet.add("commons-io_npe_5");
-        googleSheet.add("commons-io_npe_6");
-        googleSheet.add("commons-io_npe_7");
-        googleSheet.add("commons-io_npe_8");
-        googleSheet.add("commons-io_npe_9");
-        googleSheet.add("commons-io_npe_10");
-        googleSheet.add("commons-io_npe_11");
-        googleSheet.add("commons-io_npe_12");
-        googleSheet.add("commons-io_npe_13");
-        googleSheet.add("commons-io_npe_14");
-        googleSheet.add("commons-io_npe_15");
-        googleSheet.add("commons-io_npe_16");
-        googleSheet.add("commons-io_npe_17");
-        googleSheet.add("commons-io_npe_18");
-        googleSheet.add("commons-io_npe_19");
+//        googleSheet.add("lang_npe_1");
+//        googleSheet.add("lang_npe_2");
+//        googleSheet.add("lang_npe_3");
+//        googleSheet.add("lang_npe_4");
+//        googleSheet.add("lang_npe_5");
+//        googleSheet.add("lang_npe_6");
+//        googleSheet.add("lang_npe_7");
+//        googleSheet.add("lang_npe_8");
+//        googleSheet.add("lang_npe_9");
+//        googleSheet.add("lang_npe_10");
+//        googleSheet.add("lang_npe_11");
+//        googleSheet.add("lang_npe_12");
+//        googleSheet.add("lang_npe_13");
+//        googleSheet.add("lang_npe_14");
+//        googleSheet.add("math_npe_1");
+//        googleSheet.add("math_npe_2");
+//        googleSheet.add("math_npe_3");
+//        googleSheet.add("math_npe_4");
+//        googleSheet.add("math_npe_5");
+//        googleSheet.add("math_npe_6");
+//        googleSheet.add("collections_npe_1");
+//        googleSheet.add("collections_npe_2");
+//        googleSheet.add("collections_npe_3");
+//        googleSheet.add("commons-io_npe_1");
+//        googleSheet.add("commons-io_npe_2");
+//        googleSheet.add("commons-io_npe_3");
+//        googleSheet.add("commons-io_npe_4");
+//        googleSheet.add("commons-io_npe_5");
+//        googleSheet.add("commons-io_npe_6");
+//        googleSheet.add("commons-io_npe_7");
+//        googleSheet.add("commons-io_npe_8");
+//        googleSheet.add("commons-io_npe_9");
+//        googleSheet.add("commons-io_npe_10");
+//        googleSheet.add("commons-io_npe_11");
+//        googleSheet.add("commons-io_npe_12");
+//        googleSheet.add("commons-io_npe_13");
+//        googleSheet.add("commons-io_npe_14");
+//        googleSheet.add("commons-io_npe_15");
+//        googleSheet.add("commons-io_npe_16");
+//        googleSheet.add("commons-io_npe_17");
+//        googleSheet.add("commons-io_npe_18");
+//        googleSheet.add("commons-io_npe_19");
 
 
 
@@ -63,14 +63,13 @@ public class PathAssembler {
 
 
 
-        defects4j.add("Chart-2");
         defects4j.add("Chart-2");
         defects4j.add("Chart-4");
         defects4j.add("Chart-14");
         defects4j.add("Chart-16");
         defects4j.add("Cli-5");
         defects4j.add("Cli-30");
-        defects4j.add("Closure-2");
+//        defects4j.add("Closure-2");
         defects4j.add("Closure-171");
         defects4j.add("Codec-5");
         defects4j.add("Codec-13");
