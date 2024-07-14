@@ -10,7 +10,7 @@ public class PathAssembler {
     List<String> googleSheet = new ArrayList<>();
 
     List<String> defects4j = new ArrayList<>();
-gt
+
     //일단 하드코딩으로... 경로 주기
     public PathAssembler() {
 

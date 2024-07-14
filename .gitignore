@@ -3,14 +3,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-<<<<<<< HEAD
 
 resources/lang_npe_2/
 resources/key.properties
 resources/
+resources/Chart-2/
 
-=======
->>>>>>> 103d3f883f6c1728a866e3b2806c2af0a2cecd97
 ### IntelliJ IDEA ###
 .idea/
 .idea/modules.xml
