@@ -6,6 +6,7 @@
 해당 버그들을 기준으로 FuseFL의 프롬프트 엔지니어링에 대한 자세한 프롬프트 작성 리스트와 버그 리스트는 아래와 같습니다.
 
 Apache NPE without Doc
+
 https://docs.google.com/spreadsheets/d/1I8zgQZGNfzMPWr2KOR9mdYy5YOUQUqyJqVYSzDWpHx0/edit?gid=693887254#gid=693887254
 
 Defects4J without Doc
@@ -13,9 +14,11 @@ Defects4J without Doc
 https://docs.google.com/spreadsheets/d/1M5chrpiTGADJ-UcDQhX7RS89KE0QbZiOFY6lkFPJk68/edit?gid=2061759473#gid=2061759473
 
 Apache NPE with Doc
+
 https://docs.google.com/spreadsheets/d/1Tckxr_n1vZxgBgzIGSBqd3EyKu1VDwJpvnkb82E2k9I/edit?gid=871552259#gid=871552259
 
 Defects4J with Doc
+
 https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N6F8/edit?gid=1296486114#gid=1296486114
 
 ## 종합 결과
@@ -29,6 +32,8 @@ https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N
 
 
 # jdt-method-extractor
+
+Eclipse JDT (Java Development Tools) 를 이용하여 런타임때 Abstract Syntax Tree(AST)에서 각각을 파싱하여 프롬프트 구성 자동화를 만들었습니다.  
 
 제가 뽑아낸 결과들은  fusefl/result 디렉토리 안에, 코드를 돌려보기 위해서 필요한 resources들은 fuse/flresources 디렉토리 안에 구조 맞춰서 넣어놨습니다.
 
