@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6907888c-8e7e-494f-8c64-7e7aa19606d8)# 주의사항 (2024년 9월 이후)
+# 주의사항 (2024년 9월 이후)
 해당 코드는 dataSet이 학과 교수님에게 종속되어 있기에 해당 dataSet 없이는 재현이 불가능합니다.
 데이터셋에 쓰였던 Defects4j와 Apache 라이브러리의 버그 일부분으로 재현하였습니다.
 
