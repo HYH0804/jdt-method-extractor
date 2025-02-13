@@ -41,12 +41,14 @@ FuseFL의 논문대로 프롬프트를 구성한 후 GPT에게 응답을 Json �
 
 ## 종합 결과
 
-1) 기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다. 
+1) 기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다.
+   
 ![image](https://github.com/user-attachments/assets/35bc182f-ee66-4ff2-9399-b0c86c7e757d)
 
 디버깅 프롬프트 구성에서 주석을 제외했을때가 오히려 NPE 버그를 GPT가 디버깅을 효율적으로 한다는 것을 알 수 있었습니다. 따라서 이어지는 프롬프트는 프롬프트 구성에서 모두 주석을 제외하였습니다.
 
-2) FuseFL 
+2) FuseFL
+   
 ![image](https://github.com/user-attachments/assets/61f02825-0ea9-4183-b576-802509917602)
 
 총 76개의 버그 중 63개를 완벽하게 Matched, 5개를 Partially Matched, 8개를 Not Matched로 찾아내지 못했단 결과를 도출했습니다.
@@ -54,6 +56,7 @@ FuseFL의 논문대로 프롬프트를 구성한 후 GPT에게 응답을 Json �
 
 3) 해당 연구를 진행했던 데이터셋을 기반으로 클래스와 변수, 메서드 이름을 모두 무작위로 바꾸는 Obfuscation을 진행 후 다시 FuseFL의 프롬프트를 입력해보았습니다.
    그 결과는 아래와 같습니다.
+   
    ![image](https://github.com/user-attachments/assets/8557d1f6-59dc-47c7-8109-9346736f43f5)
 
 결과가 기존 데이터셋을 사용한 FuseFL without Doc과 비교해서 전체 54개 중에서 3개였던 Not Matched가 14개의 Not Matched임을 알 수 있었습니다.
