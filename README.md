@@ -23,9 +23,15 @@ https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N
 
 ## 종합 결과
 
-![image](https://github.com/user-attachments/assets/17e27a7c-47e3-4951-9b19-a9dd7c2ca97a)
+기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다. 
+![image](https://github.com/user-attachments/assets/35bc182f-ee66-4ff2-9399-b0c86c7e757d)
 
-기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다.
+디버깅 프롬프트 구성에서 주석을 제외했을때가 오히려 NPE 버그를 GPT가 디버깅을 효율적으로 한다는 것을 알 수 있었습니다.
+
+
+
+
+
 
 -----------------------------------------------------------------------------------------------------------
 
