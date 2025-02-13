@@ -33,7 +33,7 @@ https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N
 
 # jdt-method-extractor
 
-Eclipse JDT (Java Development Tools) 를 이용하여 런타임때 Abstract Syntax Tree(AST)에서 각각을 파싱하여 프롬프트 구성 자동화를 만들었습니다.  
+## Eclipse JDT (Java Development Tools) 를 이용하여 런타임때 Abstract Syntax Tree(AST)에서 각각을 파싱하여 프롬프트 구성 자동화를 만들었습니다.  
 
 제가 뽑아낸 결과들은  fusefl/result 디렉토리 안에, 코드를 돌려보기 위해서 필요한 resources들은 fuse/flresources 디렉토리 안에 구조 맞춰서 넣어놨습니다.
 
