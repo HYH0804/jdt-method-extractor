@@ -1,9 +1,11 @@
-# 주의사항 (2024년 9월 이후)
+![image](https://github.com/user-attachments/assets/6907888c-8e7e-494f-8c64-7e7aa19606d8)# 주의사항 (2024년 9월 이후)
 해당 코드는 dataSet이 학과 교수님에게 종속되어 있기에 해당 dataSet 없이는 재현이 불가능합니다.
 데이터셋에 쓰였던 Defects4j와 Apache 라이브러리의 버그 일부분으로 재현하였습니다.
 
 
-해당 버그들을 기준으로 FuseFL의 프롬프트 엔지니어링에 대한 자세한 프롬프트 작성 리스트와 버그 리스트는 아래와 같습니다.
+해당 버그들을 기준으로 FuseFL의 프롬프트 엔지니어링에 대한 자세한 프롬프트 작성 리스트와 버그 리스트는 아래와 같습니다. 결과 데이터도 포함하였습니다. 
+
+*주석의 유무로 인한 디버깅 프롬프트 영향*
 
 Apache NPE without Doc
 
@@ -21,17 +23,42 @@ Defects4J with Doc
 
 https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N6F8/edit?gid=1296486114#gid=1296486114
 
+*FuseFL과 AutoFL의 디버깅 프롬프트 결과
+
+https://docs.google.com/spreadsheets/d/1jViwkD175pqqwu7EpjNKoPdS8iBeZSrMwfOhDP0CiOk/edit?usp=sharing
+
+Obfuscation FuseFL
+
+https://docs.google.com/spreadsheets/d/14nAxroYmdWQanb61F0Y8c7_bdbMhyylKjbP8wxGyHDs/edit?gid=1256756526#gid=1256756526
+
+## 진행 방법
+
+모델: GPT-4o
+FuseFL의 논문대로 프롬프트를 구성한 후 GPT에게 응답을 Json 형식을 받습니다.
+이후 Json을 파싱하여 GPT에게 받은 후보 Error Line들을 기존 데이터셋 버그의 정답지와 비교합니다.
+후보군의 앞에서부터 차례로 비교하여 Top n까지 답안지의 Error Line을 GPT가 모두 찾았다면 Matched, 부분적으로 찾았다면 Partially Matched, 하나도 찾지 못했다면 Not Matched로 구분.
+
+
 ## 종합 결과
 
-기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다. 
+1) 기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다. 
 ![image](https://github.com/user-attachments/assets/35bc182f-ee66-4ff2-9399-b0c86c7e757d)
 
-디버깅 프롬프트 구성에서 주석을 제외했을때가 오히려 NPE 버그를 GPT가 디버깅을 효율적으로 한다는 것을 알 수 있었습니다.
+디버깅 프롬프트 구성에서 주석을 제외했을때가 오히려 NPE 버그를 GPT가 디버깅을 효율적으로 한다는 것을 알 수 있었습니다. 따라서 이어지는 프롬프트는 프롬프트 구성에서 모두 주석을 제외하였습니다.
 
+2) FuseFL 
+![image](https://github.com/user-attachments/assets/61f02825-0ea9-4183-b576-802509917602)
 
+총 76개의 버그 중 63개를 완벽하게 Matched, 5개를 Partially Matched, 8개를 Not Matched로 찾아내지 못했단 결과를 도출했습니다.
+이는 선행연구인 AutoFL보다 강력함을 시사합니다.
 
+3) 해당 연구를 진행했던 데이터셋을 기반으로 클래스와 변수, 메서드 이름을 모두 무작위로 바꾸는 Obfuscation을 진행 후 다시 FuseFL의 프롬프트를 입력해보았습니다.
+   그 결과는 아래와 같습니다.
+   ![image](https://github.com/user-attachments/assets/8557d1f6-59dc-47c7-8109-9346736f43f5)
 
+결과가 기존 데이터셋을 사용한 FuseFL without Doc과 비교해서 전체 54개 중에서 3개였던 Not Matched가 14개의 Not Matched임을 알 수 있었습니다.
 
+사용한 데이터셋은 디버깅 벤치마크를 위해 자주 쓰이는 데이터이므로 GPT가 이를 이미 학습했기에 높은 Matched 비율을 보이는 것임을 알 수 있었습니다.
 
 -----------------------------------------------------------------------------------------------------------
 
