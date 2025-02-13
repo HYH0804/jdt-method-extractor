@@ -1,3 +1,32 @@
+# 주의사항 (2024년 9월 이후)
+해당 코드는 dataSet이 학과 교수님에게 종속되어 있기에 해당 dataSet 없이는 재현이 불가능합니다.
+데이터셋에 쓰였던 Defects4j와 Apache 라이브러리의 버그 일부분으로 재현하였습니다.
+
+
+해당 버그들을 기준으로 FuseFL의 프롬프트 엔지니어링에 대한 자세한 프롬프트 작성 리스트와 버그 리스트는 아래와 같습니다.
+
+Apache NPE without Doc
+https://docs.google.com/spreadsheets/d/1I8zgQZGNfzMPWr2KOR9mdYy5YOUQUqyJqVYSzDWpHx0/edit?gid=693887254#gid=693887254
+
+Defects4J without Doc
+https://docs.google.com/spreadsheets/d/1M5chrpiTGADJ-UcDQhX7RS89KE0QbZiOFY6lkFPJk68/edit?gid=2061759473#gid=2061759473
+
+Apache NPE with Doc
+https://docs.google.com/spreadsheets/d/1Tckxr_n1vZxgBgzIGSBqd3EyKu1VDwJpvnkb82E2k9I/edit?gid=871552259#gid=871552259
+
+Defects4J with Doc
+https://docs.google.com/spreadsheets/d/13BzSnbLt9M3qf6tlBnOXf6AuWRTI8Wsl4RhXw08N6F8/edit?gid=1296486114#gid=1296486114
+
+## 종합 결과
+
+![image](https://github.com/user-attachments/assets/17e27a7c-47e3-4951-9b19-a9dd7c2ca97a)
+
+기존의 FuseFL 논문에서 더 나아가서 버그가 나는 지점에서 추가로 주석도 포함하여 프롬프트를 구성하였습니다.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
 # jdt-method-extractor
 
 제가 뽑아낸 결과들은  fusefl/result 디렉토리 안에, 코드를 돌려보기 위해서 필요한 resources들은 fuse/flresources 디렉토리 안에 구조 맞춰서 넣어놨습니다.
