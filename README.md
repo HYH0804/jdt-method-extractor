@@ -9,6 +9,7 @@ Apache NPE without Doc
 https://docs.google.com/spreadsheets/d/1I8zgQZGNfzMPWr2KOR9mdYy5YOUQUqyJqVYSzDWpHx0/edit?gid=693887254#gid=693887254
 
 Defects4J without Doc
+
 https://docs.google.com/spreadsheets/d/1M5chrpiTGADJ-UcDQhX7RS89KE0QbZiOFY6lkFPJk68/edit?gid=2061759473#gid=2061759473
 
 Apache NPE with Doc
