@@ -38,9 +38,12 @@ Eclipse JDT (Java Development Tools) 를 이용하여 런타임때 Abstract Synt
 FuseFL 기반의 자동화 프로그램입니다.(https://arxiv.org/abs/2403.10507)
 
 ## 논문 리뷰 발표자료
+
 [lab_paperReview1.pptx](https://github.com/user-attachments/files/18783662/lab_paperReview1.pptx)
+
 [lab_paperReview2.pptx](https://github.com/user-attachments/files/18783661/lab_paperReview2.pptx)
 
+## 실행방법
 
 제가 뽑아낸 결과들은  fusefl/result 디렉토리 안에, 코드를 돌려보기 위해서 필요한 resources들은 fuse/flresources 디렉토리 안에 구조 맞춰서 넣어놨습니다.
 
